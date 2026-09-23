@@ -128,5 +128,5 @@ document.addEventListener('DOMContentLoaded', function () {
     zoomButtons.forEach(function (b) { b.disabled = true; b.style.cursor = 'default'; });
   }
 
-});
 
+});
