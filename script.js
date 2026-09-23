@@ -83,8 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (entry.isIntersecting) {
           var id = entry.target.getAttribute('id');
           navLinks.forEach(function (link) {
-            link.style.borderBottomColor =
-              link.getAttribute('href') === '#' + id ? 'var(--terracota)' : 'transparent';
+            if (link.getAttribute('href') === '#' + id) { link.setAttribute('aria-current', 'true'); } else { link.removeAttribute('aria-current'); }
           });
         }
       });
@@ -92,5 +91,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     sections.forEach(function (section) { observer.observe(section); });
   }
+
+  /* ---------- Fonte legível ---------- */
+  var btnReadable = document.getElementById('btn-font-readable');
+  if (btnReadable) {
+    var readableOn = localStorage.getItem('aa-readable') === 'true';
+    var applyReadable = function () {
+      document.body.classList.toggle('readable-font', readableOn);
+      btnReadable.setAttribute('aria-pressed', String(readableOn));
+    };
+    applyReadable();
+    btnReadable.addEventListener('click', function () {
+      readableOn = !readableOn;
+      localStorage.setItem('aa-readable', String(readableOn));
+      applyReadable();
+    });
+  }
+
+  /* ---------- Galeria: imagem ampliada ---------- */
+  var box = document.getElementById('lightbox');
+  var zoomButtons = document.querySelectorAll('.gallery-zoom');
+  if (box && typeof box.showModal === 'function') {
+    var boxImg = document.getElementById('lightbox-img');
+    var boxCaption = document.getElementById('lightbox-caption');
+    zoomButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var img = btn.querySelector('img');
+        boxImg.src = img.currentSrc || img.src;
+        boxImg.alt = img.alt;
+        boxCaption.textContent = btn.closest('figure').querySelector('figcaption').textContent;
+        box.showModal();
+      });
+    });
+    box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+  } else {
+    zoomButtons.forEach(function (b) { b.disabled = true; b.style.cursor = 'default'; });
+  }
+
 });
 

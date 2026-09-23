@@ -30,13 +30,20 @@
             <button type="button" id="btn-contrast" class="a11y-contrast" aria-pressed="false">
                 Alto contraste
             </button>
+            <button type="button" id="btn-font-readable" class="a11y-toggle" aria-pressed="false">
+                Fonte legível
+            </button>
         </div>
     </div>
 
     <header class="site-header">
         <div class="header-inner">
             <div class="brand">
-                <span class="brand-name">Acesso Aberto</span>
+                <span class="brand-name"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"
+                        focusable="false">
+                        <path d="M25 9.7A11 11 0 1 0 25 22.3" fill="none" stroke="currentColor" stroke-width="4"
+                            stroke-linecap="round" />
+                    </svg>Acesso Aberto</span>
                 <span class="brand-slogan">Tecnologia para todos, sem exceções.</span>
             </div>
 
@@ -51,6 +58,7 @@
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#video">Vídeo</a></li>
                     <li><a href="#podcast">Podcast</a></li>
+                    <li><a href="#carrossel">Fotos</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,15 +67,29 @@
     <main id="inicio">
 
         <section class="hero" aria-labelledby="hero-titulo">
-            <div class="wrap">
-                <h1 id="hero-titulo">Acessibilidade não é um extra. É o que faz a tecnologia funcionar para todo mundo.
-                </h1>
-                <p class="lede">Todos os dias, milhões de pessoas encontram barreiras em sites, aplicativos e conteúdos
-                    digitais — não porque a tecnologia é limitada, mas porque ela foi pensada para um único tipo de
-                    usuário.</p>
-                <p>Este projeto reúne textos, imagens, vídeo e podcast para explicar o que é acessibilidade digital, por
-                    que ela importa e como pequenas decisões de quem desenvolve podem abrir — ou fechar — o acesso de
-                    alguém à internet.</p>
+            <div class="wrap wrap--wide hero-grid">
+                <div class="hero-text">
+                    <h1 id="hero-titulo">Acessibilidade não é um extra. É o que faz a tecnologia funcionar para todo
+                        mundo.</h1>
+                    <p class="lede">Todos os dias, milhões de pessoas encontram barreiras em sites, aplicativos e
+                        conteúdos
+                        digitais — não porque a tecnologia é limitada, mas porque ela foi pensada para um único tipo de
+                        usuário.</p>
+                    <p>Este projeto reúne textos, imagens, vídeo e podcast para explicar o que é acessibilidade digital,
+                        por
+                        que ela importa e como pequenas decisões de quem desenvolve podem abrir — ou fechar — o acesso
+                        de
+                        alguém à internet.</p>
+                    <p class="hero-actions">
+                        <a class="btn" href="#conteudo">Começar a leitura</a>
+                        <a class="btn btn--ghost" href="#video">Assistir ao vídeo</a>
+                    </p>
+                </div>
+                <figure class="hero-media">
+                    <img src="assets/img/acessibilidade-digital.png"
+                        alt="Ilustração de uma tela de computador com marcas de aprovação, cercada por pessoas diversas: uma mulher cega com bengala, um homem idoso, um homem em cadeira de rodas e uma mulher em pé.">
+                    <figcaption>Um site acessível funciona para pessoas com diferentes necessidades.</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -75,7 +97,7 @@
             <div class="wrap">
                 <div class="section-head">
                     <h2 id="conteudo-titulo">Entendendo a acessibilidade digital</h2>
-                    <p>Três ideias centrais para quem está começando a olhar para o tema.</p>
+                    <p>Seis ideias centrais para quem está começando a olhar para o tema.</p>
                 </div>
 
                 <div class="article-list">
@@ -104,6 +126,35 @@
                             mouse e vídeos sem legenda são alguns dos problemas mais frequentes. Nenhum deles exige
                             tecnologia cara para ser resolvido — exige atenção no processo de criação.</p>
                     </article>
+
+                    <article>
+                        <p class="kicker">Além da deficiência</p>
+                        <h3>Inclusão também é pensar na diversidade de pessoas</h3>
+                        <p>Um site inclusivo não considera apenas deficiências. Formulários que aceitam nome social e
+                            pronomes opcionais, textos sem suposições sobre quem lê e imagens que mostram pessoas
+                            diversas ajudam a acolher o público LGBTQIA+. Também vale pedir só os dados necessários,
+                            proteger informações sensíveis, como identidade de gênero e orientação sexual, e revisar
+                            ferramentas de IA para que não repitam estereótipos.</p>
+                    </article>
+
+                    <article>
+                        <p class="kicker">Neurodiversidade</p>
+                        <h3>Pessoas pensam e aprendem de formas diferentes</h3>
+                        <p>Pessoas com autismo, TDAH ou dislexia costumam ter dificuldade com páginas cheias de
+                            informação, textos longos e animações que não podem ser pausadas. Linguagem simples,
+                            parágrafos curtos, títulos claros, tempo suficiente para concluir tarefas e opções para
+                            reduzir movimento ou trocar a fonte tornam a leitura e a navegação mais confortáveis para
+                            todo mundo.</p>
+                    </article>
+
+                    <article>
+                        <p class="kicker">Acesso desigual</p>
+                        <h3>Nem todo mundo tem o mesmo aparelho ou a mesma conexão</h3>
+                        <p>Muita gente acessa a internet por um celular simples, com pouca memória e pacote de dados
+                            limitado. Páginas leves, imagens otimizadas, textos em linguagem clara e botões grandes
+                            ajudam quem tem conexão lenta, quem está aprendendo a usar a tecnologia e pessoas idosas.
+                            Acessibilidade também é garantir que o site funcione fora das melhores condições.</p>
+                    </article>
                 </div>
             </div>
         </section>
@@ -112,27 +163,49 @@
             <div class="wrap">
                 <div class="section-head">
                     <h2 id="galeria-titulo">Em imagens</h2>
-                    <p>Três representações visuais dos temas discutidos neste projeto.</p>
+                    <p>Representações visuais dos temas discutidos neste projeto. Selecione uma imagem para ampliar.</p>
                 </div>
             </div>
 
+            <!-- Para adicionar mais imagens, copie um bloco <figure> abaixo e troque src, alt e legenda.
+                 A grade se ajusta sozinha (3 colunas no computador, 1 no celular). -->
             <div class="gallery">
                 <figure>
-                    <img src="assets/img/acessibilidade-na-web.png"
-                        alt="Ilustração representativa sobre a acessibilidade digital incluindo qualquer pessoa.">
+                    <button type="button" class="gallery-zoom"
+                        aria-label="Ampliar imagem: Inclusão é ouvir todas as pessoas.">
+                        <img src="assets/img/igualdade-de-direitos-para-as-pessoas-com-deficiencia-fisica-generativa-ai_1169648-78751.avif"
+                            alt="Ilustração representativa sobre a acessibilidade digital incluindo qualquer pessoa."
+                            loading="lazy">
+                    </button>
                     <figcaption>Inclusão é ouvir todas as pessoas.</figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/img/70w750-1.jpg"
-                        alt="Ilustração de um teclado estilizado com uma tecla destacada por um contorno de foco visível, representando navegação sem o uso do mouse">
+                    <button type="button" class="gallery-zoom"
+                        aria-label="Ampliar imagem: Navegação por teclado depende de um foco visível e claro.">
+                        <img src="assets/img/70w750-1.jpg"
+                            alt="Ilustração de um teclado estilizado com uma tecla destacada por um contorno de foco visível, representando navegação sem o uso do mouse"
+                            loading="lazy">
+                    </button>
                     <figcaption>Navegação por teclado depende de um foco visível e claro.</figcaption>
                 </figure>
                 <figure>
-                    <img src="assets/img/pontes_para_liberdade-1.jpg"
-                        alt="Ilustração de uma ponte onde diferentes tipos de pessoas estão atravessando">
+                    <button type="button" class="gallery-zoom"
+                        aria-label="Ampliar imagem: A tecnologia como ponte entre pessoas diferentes.">
+                        <img src="assets/img/pontes_para_liberdade-1.jpg"
+                            alt="Ilustração de uma ponte onde diferentes tipos de pessoas estão atravessando"
+                            loading="lazy">
+                    </button>
                     <figcaption>A tecnologia como ponte entre pessoas diferentes.</figcaption>
                 </figure>
             </div>
+
+            <dialog id="lightbox" class="lightbox" aria-labelledby="lightbox-caption">
+                <div class="lightbox-inner">
+                    <img id="lightbox-img" src="" alt="">
+                    <p id="lightbox-caption"></p>
+                    <form method="dialog"><button class="btn" autofocus>Fechar</button></form>
+                </div>
+            </dialog>
         </section>
 
         <section id="video" aria-labelledby="video-titulo">
@@ -144,12 +217,10 @@
 
                 <div class="media-block">
                     <div class="player">
-                        <video controls poster="assets/img/navegacao-teclado.svg">
-                            <source src="assets/video/video-inclusao.mp4" type="video/mp4">
+                        <video controls poster="assets/img/acessibilidade-digital.png">
+                            <source src="assets/video/video_final_16x9.mp4" type="video/mp4">
                             Seu navegador não suporta reprodução de vídeo.
                         </video>
-                        <p class="player-note">Substitua "assets/video/video-inclusao.mp4" pelo arquivo final produzido
-                            pela equipe.</p>
                     </div>
 
                     <details class="transcript">
@@ -196,72 +267,149 @@
                 <div class="media-block">
                     <div class="player">
                         <audio controls>
-                            <source src="assets/audio/podcast-inclusao.mp3" type="audio/mpeg">
-                            Seu navegador não suporta reprodução de áudio.
+                            <source src="assets/video/audio.m4a" type="audio/mp4">
+                            Seu navegador não suporta reprodução de áudio. Leia a transcrição abaixo.
                         </audio>
-                        <p class="player-note">Substitua "assets/audio/podcast-inclusao.mp3" pelo episódio final
-                            produzido pela equipe.</p>
                     </div>
 
                     <details class="transcript">
                         <summary>Ler transcrição completa do podcast</summary>
                         <div class="transcript-body">
-                            <p><strong>Apresentadora:</strong> Hoje vamos conversar sobre como pequenas decisões de
-                                desenvolvimento removem barreiras para quem usa a internet todos os dias.</p>
-                            <p><strong>Convidado:</strong> Começar pela estrutura semântica torna a página mais
-                                compreensível para leitores de tela e outras tecnologias assistivas.</p>
-                            <p><strong>Apresentadora:</strong> E quando o assunto é imagem, o que muda?</p>
-                            <p><strong>Convidado:</strong> Um texto alternativo objetivo já resolve boa parte do
-                                problema. Ele descreve a função da imagem, não só o que aparece nela.</p>
-                            <p><strong>Apresentadora:</strong> Um bom resumo para fechar: acessibilidade é sobre pensar
-                                em quem vai usar o que a gente cria.</p>
-                            <p><strong>Convidado:</strong> Exatamente. É um cuidado com pessoas, não uma tarefa técnica
-                                isolada.</p>
-
+                            <p><strong>Apresentadora:</strong> Para começar, podemos imaginar uma pessoa tentando
+                                encontrar um interruptor em um quarto completamente escuro. Ela fica procurando,
+                                tentando se localizar, mas, enquanto isso, alguém fica mudando o interruptor de lugar.
+                            </p>
+                            <p><strong>Convidado:</strong> Essa situação representa muito bem o que pode acontecer
+                                quando um site não é acessível. Para muitas pessoas, navegar na internet pode ser como
+                                tentar encontrar algo sem saber onde está.</p>
+                            <p><strong>Apresentadora:</strong> E a acessibilidade digital precisa de tecnologias caras
+                                ou de soluções extremamente complexas?</p>
+                            <p><strong>Convidado:</strong> Não. Ela começa nas escolhas básicas feitas durante o
+                                desenvolvimento de um site. Um dos primeiros pontos é a estrutura semântica do HTML.</p>
+                            <p><strong>Apresentadora:</strong> E o que significa essa estrutura semântica?</p>
+                            <p><strong>Convidado:</strong> Podemos imaginar o HTML como o esqueleto de um prédio. Ele
+                                não define a decoração, mas define onde estão as portas, paredes e outras estruturas.
+                            </p>
+                            <p><strong>Apresentadora:</strong> Então as diferentes tags do HTML têm funções diferentes?
+                            </p>
+                            <p><strong>Convidado:</strong> Exatamente. Usamos diferentes tags para indicar o significado
+                                de cada elemento: uma para títulos, outra para parágrafos, outra para links e outra para
+                                botões.</p>
+                            <p><strong>Apresentadora:</strong> E por que isso é tão importante para a acessibilidade?
+                            </p>
+                            <p><strong>Convidado:</strong> Porque isso ajuda as tecnologias assistivas, principalmente
+                                os leitores de tela. Por exemplo, podemos criar visualmente algo que parece um botão
+                                usando uma <code>div</code>, cores e CSS. Para quem usa o mouse, pode até funcionar
+                                normalmente. Porém, um leitor de tela pode não reconhecer aquele elemento como um botão.
+                            </p>
+                            <p><strong>Apresentadora:</strong> Então usar a tag correta faz diferença mesmo que
+                                visualmente pareça a mesma coisa?</p>
+                            <p><strong>Convidado:</strong> Sim. Quando usamos corretamente a tag <code>button</code>, o
+                                leitor de tela consegue identificar sua função e informar ao usuário que aquele elemento
+                                é um botão.</p>
+                            <p><strong>Apresentadora:</strong> Mas a acessibilidade não depende apenas do código, certo?
+                            </p>
+                            <p><strong>Convidado:</strong> Certo. A parte visual também precisa ser pensada. Um dos
+                                principais problemas é o contraste entre as cores.</p>
+                            <p><strong>Apresentadora:</strong> Pode dar um exemplo?</p>
+                            <p><strong>Convidado:</strong> Um texto cinza muito claro sobre um fundo branco pode parecer
+                                bonito e minimalista, mas pode ser extremamente difícil de enxergar para uma pessoa com
+                                baixa visão. O contraste também faz diferença para quem utiliza uma tela em ambientes
+                                com muita luz.</p>
+                            <p><strong>Apresentadora:</strong> Então o contraste não é apenas uma questão estética.</p>
+                            <p><strong>Convidado:</strong> Exatamente. Ele está diretamente relacionado à capacidade de
+                                uma pessoa conseguir enxergar e compreender uma informação.</p>
+                            <p><strong>Apresentadora:</strong> Outro ponto importante é a navegação pelo teclado. Como
+                                ela funciona?</p>
+                            <p><strong>Convidado:</strong> Nem todo mundo utiliza o mouse para navegar. Algumas pessoas
+                                dependem do teclado para interagir com sites, utilizando principalmente a tecla
+                                <strong>Tab</strong>.</p>
+                            <p><strong>Apresentadora:</strong> E o que acontece quando pressionamos a tecla Tab?</p>
+                            <p><strong>Convidado:</strong> O navegador passa pelos elementos interativos da página, como
+                                links, campos e botões. Para isso funcionar corretamente, o usuário precisa conseguir
+                                perceber onde está o foco.</p>
+                            <p><strong>Apresentadora:</strong> Esse é aquele destaque que aparece ao redor de um botão
+                                ou link?</p>
+                            <p><strong>Convidado:</strong> Exatamente. Ele é chamado de indicador de foco. Quando esse
+                                indicador é removido apenas porque alguém considera que deixa o design menos bonito, a
+                                pessoa que navega pelo teclado pode perder completamente a noção de onde está na página.
+                            </p>
+                            <p><strong>Apresentadora:</strong> Então é como estar naquele quarto escuro do começo?</p>
+                            <p><strong>Convidado:</strong> Exatamente. A pessoa sabe que está se movimentando, mas não
+                                consegue saber exatamente onde está.</p>
+                            <p><strong>Apresentadora:</strong> E todos esses exemplos mostram que acessibilidade digital
+                                é muito mais do que seguir algumas regras técnicas.</p>
+                            <p><strong>Convidado:</strong> Sim. Ela está diretamente relacionada à autonomia. Uma pessoa
+                                deveria conseguir utilizar um aplicativo de banco, marcar uma consulta, ler uma notícia,
+                                estudar ou realizar uma compra sem precisar depender de outra pessoa simplesmente porque
+                                o site não foi desenvolvido de maneira acessível.</p>
+                            <p><strong>Apresentadora:</strong> Então a acessibilidade deve estar presente durante todo o
+                                processo de desenvolvimento.</p>
+                            <p><strong>Convidado:</strong> Exatamente. Desde quem define o projeto, passando pelo
+                                designer, até quem escreve o código. Todos participam da construção de uma experiência
+                                acessível.</p>
+                            <p><strong>Apresentadora:</strong> Para finalizar, qual seria a principal mensagem?</p>
+                            <p><strong>Convidado:</strong> A acessibilidade digital não é um recurso extra. Muitas das
+                                soluções necessárias são simples: utilizar corretamente as tags HTML, manter um bom
+                                contraste de cores e preservar o indicador de foco para quem navega pelo teclado.</p>
+                            <p><strong>Apresentadora:</strong> São pequenas escolhas dentro do desenvolvimento que podem
+                                fazer uma enorme diferença na vida das pessoas.</p>
+                            <p><strong>Convidado:</strong> Exatamente. A tecnologia necessária para criar sites
+                                acessíveis já existe. O principal desafio é criar consciência e desenvolver bons hábitos
+                                desde o início do projeto.</p>
+                            <p><strong>Apresentadora:</strong> Então podemos concluir que acessibilidade digital é,
+                                acima de tudo, uma forma de garantir autonomia e participação.</p>
+                            <p><strong>Convidado:</strong> Sim. Em vez de criar barreiras, precisamos construir pontes
+                                para que todas as pessoas possam utilizar a internet de forma independente.</p>
                         </div>
                     </details>
                 </div>
             </div>
         </section>
 
-    </main>
+         </main>
 
-    <footer class="site-footer">
-        <div class="wrap wrap--wide">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3 class="footer-brand">Acesso Aberto</h3>
-                    <p>Projeto integrador sobre tecnologia, inteligência artificial e inclusão, unindo desenvolvimento
-                        web, produção multimídia e uso responsável de IA como ferramenta de apoio.</p>
+            <footer class="site-footer">
+                <div class="wrap wrap--wide">
+                    <div class="footer-grid">
+                        <div class="footer-col">
+                            <h3 class="footer-brand">Acesso Aberto</h3>
+                            <p>Projeto integrador sobre tecnologia, inteligência artificial e inclusão, unindo
+                                desenvolvimento
+                                web, produção multimídia e uso responsável de IA como ferramenta de apoio.</p>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Equipe do projeto</h4>
+                            <ul>
+                                <li>Laila — desenvolvimento e conteúdo</li>
+                                <li>Projeto integrador · Tecnologia, IA e Inclusão</li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Declaração de acessibilidade</h4>
+                            <p>Este site foi construído com HTML semântico, navegação por teclado, foco visível e
+                                controles de
+                                alto contraste e tamanho de texto, buscando seguir as diretrizes de acessibilidade da
+                                web
+                                (WCAG).</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="closing-message">"Acessibilidade não é um detalhe final: é uma escolha que fazemos
+                            desde a
+                            primeira linha de código. Que este projeto seja um lembrete de que tecnologia de verdade é
+                            aquela
+                            que cabe todo mundo."</p>
+                        <p class="footer-copy">Projeto integrador Acesso Aberto — produzido com apoio de ferramentas de
+                            inteligência artificial.</p>
+                    </div>
                 </div>
+            </footer>
 
-                <div class="footer-col">
-                    <h4>Equipe do projeto</h4>
-                    <ul>
-                        <li>Laila — desenvolvimento e conteúdo</li>
-                        <li>Projeto integrador · Tecnologia, IA e Inclusão</li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Declaração de acessibilidade</h4>
-                    <p>Este site foi construído com HTML semântico, navegação por teclado, foco visível e controles de
-                        alto contraste e tamanho de texto, buscando seguir as diretrizes de acessibilidade da web
-                        (WCAG).</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="closing-message">"Acessibilidade não é um detalhe final: é uma escolha que fazemos desde a
-                    primeira linha de código. Que este projeto seja um lembrete de que tecnologia de verdade é aquela
-                    que cabe todo mundo."</p>
-                <p class="footer-copy">Projeto integrador Acesso Aberto — produzido com apoio de ferramentas de
-                    inteligência artificial.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>
